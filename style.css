@@ -1,0 +1,76 @@
+.the-girl-next-door-regular {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "The Girl Next Door", cursive;
+    background: #fef9f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    max-width: 100%;
+    font-size: 3rem;
+    margin-bottom: 1rem; 
+}
+
+p {
+    font-family: "The Girl Next Door", cursive; 
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555; 
+}
+
+.Beginning img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+.launch-area{
+    position:relative; 
+    width: 100%;
+    height: 100%;
+}
+
+.rocket{
+    width: 100px;
+    transition: transform 2s ease-in;
+    cursor: pointer;
+}
+
+.icon{
+    width:120px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.spin {
+  animation: spin 1s linear forwards;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(720deg); } 
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
