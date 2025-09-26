@@ -97,7 +97,8 @@ p {
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
+  min-height: 100%;      
+  overflow-y: auto; 
+  -webkit-overflow-scrolling: touch;
 }
 
