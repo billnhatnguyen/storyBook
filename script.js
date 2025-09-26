@@ -23,3 +23,36 @@ if (icon) {
     });
   });
 }
+
+const cherry = document.getElementById("cherry");
+if (cherry) {  
+  cherry.addEventListener("click", () => {
+
+  cherry.addEventListener(
+    "animationend",
+    () => {
+      window.location.href = "fourthPage.html";
+    },
+    { once: true }
+  );
+    cherry.classList.add("slide-out");
+
+  });
+}
+
+const finalGo = document.getElementById("finalGo");
+
+if (finalGo) {  
+  finalGo.addEventListener("click", () => {
+    
+    finalGo.classList.add("spin"); 
+
+    finalGo.addEventListener(
+      "animationend",
+      () => {
+        window.location.href = "fifthPage.html"; 
+      },
+      { once: true } 
+    );
+  });
+}
